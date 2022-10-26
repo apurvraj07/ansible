@@ -12,7 +12,7 @@ install_requires = (here / 'requirements.txt').read_text(encoding='utf-8').split
 setup(
     install_requires=install_requires,
     package_dir={'': 'lib',
-                 'ansible_test': 'test/lib/ansible_test'},
+                'ansible_test': 'test/lib/ansible_test'},
     packages=find_packages('lib') + find_packages('test/lib'),
     entry_points={
         'console_scripts': [
